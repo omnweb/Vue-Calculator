@@ -71,7 +71,7 @@ export default {
                 this.displayValue = this.values[0] // O resultado da operação será colocado no display
                 this.operation = equals ? null : operation // se for true === null, se não recebe nova operação
                 this.current = equals ? 0 : 1   // Se equals for verdadeiro, o usuário ainda n digitou nenhuma operação, então mexe no índice 0, caso contrário entra no índice 1
-                this.clearDisplay = !equals
+                this.clearDisplay = !equals //Limpa o display se for diferente de equals
            }
         },
         //Adiciona dígito recebe n como parâmetro, que é o número digitado
